@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>
+		Voiturehub.fr: Trouvez le covoiturage qu'il vous faut
+	</title>
+	<!-- La feuille de styles "base.css" doit être appelée en premier. -->
+	<link rel="stylesheet" type="text/css" href="base.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="index.css" media="screen" />
+</head>
+
+<body>
+
+<div id="global">
+
+	<div id="entete">
+		<h1>
+			<img alt="" url="standardiste.jpg" />
+			<span><a href='index.html'>VOITUREHUB.FR</a></span>
+		</h1>
+		<p class="sous-titre">
+			Trouvez le covoiturage qu'il vous faut parmi nos annonces !
+		</p>
+	</div><!-- #entete -->
+
+	<div id="centre">
+
+		<div id="contenu">
+			<h3>Veuillez renseigner les champs ci-dessous pour créer un compte</h3>
+			<form method="POST" enctype="multipart/form-data" action="creation_action.php">
+				<label for="nom">Nom :</label>
+				<input type='text' id='nom' name='nom' /><br/>
+				<label for="prenom">Prénom :</label>
+				<input type='text' id='prenom' name='prenom' /><br/>
+				<label for='naissance'>Année de naissance :</label>
+				<input type='text' id='naissance' name='naissance' /><br/>
+				<label for="login">Login :</label>
+				<input type='text' id='login' name='login' /><br/>
+				<label for="pass">Mot de passe :</label>
+				<input type='password' id='pass' name='pass' /><br/>
+
+				<label for="fichier">Votre photo (JPG, PNG ou GIF | max. 15 Ko) :</label><br/>
+     				<input type="file" name="fichier" size="30">
+
+				<input type='submit' name="upload" value="Créer un compte" />
+				<input type='reset' value='Effacer' />
+
+			</form>
+		</div><!-- #contenu -->
+	</div><!-- #centre -->
+
+	<div id="pied">
+		<p><strong><a href="deconnexion.php">[SE DÉCONNECTER]</a></strong></p>
+		<p id="copyright">
+			<strong>voiturehub.fr© Tous droits réservés</strong> UV LO07
+		</p>
+	</div><!-- #pied -->
+
+</div><!-- #global -->
+
+</body>
